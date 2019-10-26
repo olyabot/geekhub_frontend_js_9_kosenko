@@ -1,0 +1,32 @@
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.text_font {
+    font-size: 20px;
+}
+.text_align_center {
+    text-align: center;
+}
+
+.text_align_right {
+    text-align: right;
+}
+
+.img_align_left {
+    float: left;
+    margin-right: 10px;
+}
+
+.img_align_center {
+    display: block;
+    margin: 0 auto;
+}
+
+.list_margin {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
