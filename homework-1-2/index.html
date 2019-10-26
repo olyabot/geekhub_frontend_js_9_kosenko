@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main.css">
     <title>Homework-1-2</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
     <p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.</p>
     <form action="#" method="get">
         <fieldset>
-            <legend><strong>Коротко о себе</strong></legend>
+            <legend><b>Коротко о себе</b></legend>
             <p>
                 <label>Имя:
                     <input type="text" name="first_name">
@@ -31,45 +32,53 @@
             </p>
             <p>
                 <label>Возраст: 
-                    <input type="text" name="age" size="5"> лет
+                    <input type="number" name="age" min="1" max="100"> лет
                 </label>
             </p>
         </fieldset>
         <br>
         <fieldset>
-            <legend><strong>Подробнее о себе</strong></legend>
+            <legend><b>Подробнее о себе</b></legend>
             <p>
-                <input type="radio" name="teenager" checked>Молодой человек<br>
-                <input type="radio" name="teenager">Девушка
+                <ul class="list_style">
+                    <li><input type="radio" name="teenager" checked>Молодой человек</li>
+                    <li><input type="radio" name="teenager">Девушка</li>
+                </ul>
             </p>
             <p>
-                <input type="text" name="about_me"> Дата рождения<br>
-                <input type="text" name="about_me"> Семейное положение<br>
-                <input type="text" name="about_me"> Социальный статус<br>
-                <input type="text" name="about_me"> Местожительства<br>
+                <ul class="list_style">
+                    <li><input type="text" name="about_me"> Дата рождения</li>
+                    <li><input type="text" name="about_me"> Семейное положение</li>
+                    <li><input type="text" name="about_me"> Социальный статус</li>
+                    <li><input type="text" name="about_me"> Местожительства</li>
+                </ul>
             </p>
             <p>
-                <p><strong>Что вы обычно делаете на выходных:</strong></p>
-                <input type="checkbox" name="weekend">Сплю<br>
-                <input type="checkbox" name="weekend">Гуляю с друзьями<br>
-                <input type="checkbox" name="weekend">Хожу на рыбалку<br>
-                <input type="checkbox" name="weekend">Играю в игры<br>
+                <p><b>Что вы обычно делаете на выходных:</b></p>
+                <ul class="list_style">
+                    <li><input type="checkbox" name="weekend">Сплю</li>
+                    <li><input type="checkbox" name="weekend">Гуляю с друзьями</li>
+                    <li><input type="checkbox" name="weekend">Хожу на рыбалку</li>
+                    <li><input type="checkbox" name="weekend">Играю в игры</li>
+                </ul>
             </p>
             <p>
-                <p><strong>Рассказать о формах в книге, посвященной HTML:</strong></p>
+                <p><b>Рассказать о формах в книге, посвященной HTML:</b></p>
                 <select name="forms_html">
                     <option value="Site_frequency">Site frequency:</option>
                 </select>
             </p>
             <p>
-                <p><strong>Сколько книг вы прочитали за свою жизнь:</strong></p>
-                <input type="radio" name="books">0-10<br>
-                <input type="radio" name="books">11-20<br>
-                <input type="radio" name="books">21-50<br>
-                <input type="radio" name="books">50+
+                <p><b>Сколько книг вы прочитали за свою жизнь:</b></p>
+                <ul class="list_style">
+                    <li><input type="radio" name="books">0-10</li>
+                    <li><input type="radio" name="books">11-20</li>
+                    <li><input type="radio" name="books">21-50</li>
+                    <li><input type="radio" name="books">50+</li>
+                </ul>
             </p>
             <p>
-                <strong>Ваши комментарии:</strong><br>
+                <b>Ваши комментарии:</b><br>
                 <textarea cols="50" rows="10"></textarea>
             </p>
             <p>
@@ -82,25 +91,29 @@
         </fieldset>
         <br>
         <fieldset>
-            <legend><strong>И в заключении</strong></legend>
+            <legend><b>И в заключении</b></legend>
             <p>
                 <input type="text" size="30" placeholder="Это поле было введено до вас" disabled>
             </p>
-            <p><strong>Email:</strong><br>
+            <p><b>Email:</b><br>
                 <input type="email" name="email" size="30">
             </p>
             <p>
-                <p><strong>Хотите подписаться на самую модную рассылку спама?</strong><br>
-                <em>Выберите категории</em></p>
-                <input type="checkbox" name="spam_category">Оборудование<br>
-                <input type="checkbox" name="spam_category">Как приготовить обеды<br>
-                <input type="checkbox" name="spam_category">Заработай миллион за два дня!
+                <p><b>Хотите подписаться на самую модную рассылку спама?</b><br>
+                <i>Выберите категории</i></p>
+                <ul class="list_style">
+                    <li><input type="checkbox" name="spam_category">Оборудование</li>
+                    <li><input type="checkbox" name="spam_category">Как приготовить обеды</li>
+                    <li><input type="checkbox" name="spam_category">Заработай миллион за два дня!</li>
+                </ul>
             </p>
             <p>
-                <p><strong>На сколько сложная задача:</strong></p>
-                <input type="radio" name="difficult" checked>Совсем нет<br>
-                <input type="radio" name="difficult">Так себе<br>
-                <input type="radio" name="difficult">Еле справились
+                <p><b>На сколько сложная задача:</b></p>
+                <ul class="list_style">
+                    <li><input type="radio" name="difficult" checked>Совсем нет</li>
+                    <li><input type="radio" name="difficult">Так себе</li>
+                    <li><input type="radio" name="difficult">Еле справились</li>
+                </ul>
             </p>
         </fieldset>
         <p><button type="submit">Отправить</button></p>
